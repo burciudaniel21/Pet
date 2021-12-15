@@ -7,8 +7,7 @@ namespace Pet
         static void Main(string[] args)
         { 
             Menu gameMenu = new Menu();
-            gameMenu.Display();
-            //gameMenu.InGameTimer();
+            gameMenu.Run();
         }
     }
 }
