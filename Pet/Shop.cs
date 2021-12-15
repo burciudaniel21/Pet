@@ -7,7 +7,7 @@ namespace Pet
 {
     class Shop : CoinsHandler
     {
-        public List<Items> items = new List<Items>();
+        private List<Items> items = new List<Items>();
 
         private int reptoBoostStock, reptoMedicineStock, aquaBoostStock, pimafixFishStock, generalMedicineStock, aquarianStock, jellyStock, cricketsStock, fruitsStock, foodStock, ballStock, mirrorStock, fishRingStock;
         private string userItemChoice;

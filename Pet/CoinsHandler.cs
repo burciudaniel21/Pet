@@ -7,7 +7,7 @@ namespace Pet
 {
     public class CoinsHandler
     {
-        private static double coins=50;
+        private static double coins= 50;
         public CoinsHandler() { }
 
         public void UpdateCoins() //increase amount of coins over time

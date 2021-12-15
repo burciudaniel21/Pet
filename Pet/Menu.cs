@@ -141,7 +141,6 @@ namespace Pet
                 Console.WriteLine($"Your pet's is: {pet.GetHunger()}");
                 Console.WriteLine($"Your pet is {pet.UpdatePetStatus()}");
                 Console.WriteLine($"Room temperature is {room.GetTemperature()}\n");
-
                 Console.WriteLine("Press |1| to feed pet.");
                 Console.WriteLine("Press |2| to play with the pet.");
                 Console.WriteLine("Press |3| to give medicine to the pet.");

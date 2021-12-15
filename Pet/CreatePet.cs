@@ -7,9 +7,9 @@ namespace Pet
 {
     public class CreatePet
     {
-        public List<IPet> listOfPets = new List<IPet>();
-        bool inMenu = true;
-        public string userInput = "";
+        private List<IPet> listOfPets = new List<IPet>();
+        private bool inMenu = true;
+        private string userInput = "";
         public CreatePet() { }
         public void CreateUserPet() //selects the type of pet to be created and assign a name to the pet
         {

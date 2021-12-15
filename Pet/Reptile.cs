@@ -141,10 +141,18 @@ ___.....---'''        .       ''--..____
 
         public override void UpdateHP() //decrease pet hp every 2500 milliseconds
         {
-            while (petHp > 0)
-            {
-                petHp--;
+            while (petHp > -1)
+            {               
                 Thread.Sleep(2500);
+                if(petHp == 0)
+                {
+                    petHp = 0;
+                }
+                else
+                {
+                 petHp--;
+                }
+                
             }
 
         }
@@ -154,16 +162,17 @@ ___.....---'''        .       ''--..____
             return petHp;
         }
 
-        public override void Heal(int amount) //heals the pet
+        public override void Heal(int amount) //heals the pet and increase hunger depdending on the medicine.
         {
             if (petHp + amount > 100)
             {
-                petHp = 100;
+                petHp = 100;  
             }
             else
             {
                 petHp += amount;
             }
+            hunger += amount / 2;
         }
 
         public override void Play(int amount) //increase the pet mood

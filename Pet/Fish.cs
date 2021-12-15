@@ -168,6 +168,8 @@ $@"/\       o                 o
             {
                 petHp += amount;
             }
+            hunger += amount / 2;
+
         }
 
         public override void Play(int amount) //increase the pet mood
